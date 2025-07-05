@@ -29,7 +29,8 @@ export function Projects() {
             description: "Responsive portfolio showcase with smooth animations and modern design",
             image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop",
             technologies: ["React", "Tailwind CSS"],
-            github: "#",
+            github: "https://github.com/Nik3552/portfolio-website.git",
+            live: "https://nik3552.github.io/portfolio-website/"
         }
     ];
 
