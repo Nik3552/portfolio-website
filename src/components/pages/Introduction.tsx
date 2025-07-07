@@ -29,7 +29,7 @@ export function Intro() {
                     <a href="https://github.com/Nik3552" target="_blank" className="p-2 bg-cyan-500 rounded-md hover:bg-cyan-600 text-white transition-all">
                         View My Work
                     </a>
-                    <a href="/public/Maiboroda_Mykyta_CV.docx" download={true} className="flex flex-row items-center gap-3 border-cyan-500 border-1 rounded-md p-2 text-cyan-500 hover:bg-cyan-50 hover:text-black transition-all">
+                    <a href="/portfolio-website/Maiboroda_Mykyta_CV.docx" download={true} className="flex flex-row items-center gap-3 border-cyan-500 border-1 rounded-md p-2 text-cyan-500 hover:bg-cyan-50 hover:text-black transition-all">
                         Download CV <Download size={16} />
                     </a>
                 </div>
