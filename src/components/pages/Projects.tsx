@@ -20,7 +20,7 @@ export function Projects() {
         {
             title: "Color Scheme Generator",
             description: "The Color-Scheme-Generator is a simple yet powerful web tool that helps you create beautiful color palettes for your projects.",
-            image: "/color-sheme-generator.jpg",
+            image: "/public/color-sheme-generator.jpg",
             technologies: ["HTML", "CSS", "JavaScript", "API"],
             github: "https://github.com/Nik3552/Color-Scheme-Generator.git",
         },
