@@ -45,7 +45,7 @@ export function ContactForm() {
 
     return (
         <section id="contact-form" className="h-screen w-screen flex flex-col justify-center items-center">
-            <div className="flex flex-col container mx-10 items-center gap-8">
+            <div className="flex flex-col container mx-10 items-center gap-8" id="contact-me-form">
                 <h3 className="text-4xl font-bold text-wrap text-center">Let's Work Together</h3>
                 <form onSubmit={handleSubmit(onSubmit)} className="w-10/12 flex flex-col gap-5 items-start border-2 rounded-xl border-gray-200 p-8">
                     <input {...register("name")} className="w-full border-2 rounded-md p-3 border-gray-200 " placeholder="Your Name" />
@@ -66,7 +66,7 @@ export function ContactForm() {
                     <div className="text-red-500">{errors.root.message}</div>
                 )}
             </div>
-            <div className="text-center pt-8">
+            <div className="text-center pt-8" id="social-links">
                 <h3 className="text-gray-900">Or reach out directly:</h3>
                 <div className="flex flex-row gap-5 justify-center items-center pt-3">
                     <a href="#contact-form">
