@@ -2,7 +2,7 @@ import { Github, Linkedin, Mail, Code, Palette, Zap } from "lucide-react"
 
 export function AboutMe() {
     return (
-        <section className="pb-20 pt-10 bg-gray-50 w-screen">
+        <section className="py-20 bg-gray-50 w-screen">
             <div className="container mx-auto px-6">
                 <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
                     About Me
@@ -26,7 +26,7 @@ export function AboutMe() {
                                 <a href="https://github.com/Nik3552" target="_blank" className="border-cyan-500 text-cyan-500">
                                     <Github size={36} className="border-2 border-cyan-500 text-cyan-500 rounded-md p-2 hover:bg-gray-100 hover:cursor-pointer hover:text-black" />
                                 </a>
-                                <a href="https://www.linkedin.com/in/mykyta-maiboroda-929198363/" target="_blank" className="border-cyan-500 text-cyan-500">
+                                <a href="www.linkedin.com/in/mykyta-maiboroda" target="_blank" className="border-cyan-500 text-cyan-500">
                                     <Linkedin size={36} className="border-2 border-cyan-500 text-cyan-500 rounded-md p-2 hover:bg-gray-100 hover:cursor-pointer hover:text-black" />
                                 </a>
                                 <a href="#contact-form" className="border-cyan-500 text-cyan-500">

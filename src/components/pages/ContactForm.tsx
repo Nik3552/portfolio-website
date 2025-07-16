@@ -95,7 +95,7 @@ export function ContactForm() {
                     <a href="https://github.com/Nik3552" target="_blank">
                         <Github size={36} className="border-2 border-cyan-500 text-cyan-500 rounded-md p-2 hover:bg-gray-100 hover:cursor-pointer hover:text-black" />
                     </a>
-                    <a href="https://www.linkedin.com/in/mykyta-maiboroda-929198363/" target="_blank">
+                    <a href="www.linkedin.com/in/mykyta-maiboroda" target="_blank">
                         <Linkedin size={36} className="border-2 border-cyan-500 text-cyan-500 rounded-md p-2 hover:bg-gray-100 hover:cursor-pointer hover:text-black" />
                     </a>
                 </div>
