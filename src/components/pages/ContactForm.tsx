@@ -56,7 +56,7 @@ export function ContactForm() {
                     {errors.email && (
                         <div className="text-red-500">{errors.email.message}</div>
                     )}
-                    <textarea {...register("message")} className="w-full min-h-13 border-2 rounded-md p-3 border-gray-200 " placeholder="Your Message" />
+                    <textarea {...register("message")} className="w-full min-h-13 border-2 rounded-md p-3 border-gray-200 resize-none md:resize-y" placeholder="Your Message" />
                     {errors.message && (
                         <div className="text-red-500">{errors.message.message}</div>
                     )}
