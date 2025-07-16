@@ -6,6 +6,7 @@ import { Mail } from "lucide-react"
 import { Github } from "lucide-react"
 import { Linkedin } from "lucide-react"
 import axios from "axios"
+import { useRef } from "react"
 
 const contactSchema = z.object({
     name: z.string().min(1, "Name is required"),
@@ -16,6 +17,7 @@ const contactSchema = z.object({
 type contactFormFields = z.infer<typeof contactSchema>
 
 export function ContactForm() {
+    const textAreaRef = useRef<HTMLTextAreaElement | null>(null);
 
     const {
         register,
@@ -27,6 +29,8 @@ export function ContactForm() {
         resolver: zodResolver(contactSchema)
     })
 
+    const messageRegister = register("message");
+
     const onSubmit: SubmitHandler<contactFormFields> = async (data) => {
         try {
             await axios.post(
@@ -35,11 +39,22 @@ export function ContactForm() {
                 { headers: { 'Accept': 'application/json' } }
             )
             reset()
+            if (textAreaRef.current) {
+                textAreaRef.current.style.height = 'auto';
+            }
         } catch (err) {
             setError("root", {
                 message: "An error occurred while trying to submit your form"
             })
             console.log(err)
+        }
+    }
+
+    const handleTextArea = () => {
+        const textArea = textAreaRef.current;
+        if (textArea) {
+            textArea.style.height = "auto";
+            textArea.style.height = textArea.scrollHeight + "px";
         }
     }
 
@@ -56,7 +71,12 @@ export function ContactForm() {
                     {errors.email && (
                         <div className="text-red-500">{errors.email.message}</div>
                     )}
-                    <textarea {...register("message")} className="w-full min-h-13 border-2 rounded-md p-3 border-gray-200 resize-none md:resize-y" placeholder="Your Message" />
+                    <textarea {...register("message")}
+                        {...messageRegister}
+                        ref={(e) => {
+                            messageRegister.ref(e);
+                            textAreaRef.current = e;
+                        }} onInput={handleTextArea} className="w-full min-h-13 border-2 rounded-md p-3 border-gray-200 resize-none overflow-hidden" placeholder="Your Message" />
                     {errors.message && (
                         <div className="text-red-500">{errors.message.message}</div>
                     )}
