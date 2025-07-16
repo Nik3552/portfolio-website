@@ -44,7 +44,7 @@ export function ContactForm() {
     }
 
     return (
-        <section id="contact-form" className="h-screen w-screen flex flex-col justify-center items-center">
+        <section id="contact-form" className="min-h-screen-screen w-screen flex flex-col justify-center items-center py-10">
             <div className="flex flex-col container mx-10 items-center gap-8" id="contact-me-form">
                 <h3 className="text-4xl font-bold text-wrap text-center">Let's Work Together</h3>
                 <form onSubmit={handleSubmit(onSubmit)} className="w-10/12 flex flex-col gap-5 items-start border-2 rounded-xl border-gray-200 p-8">

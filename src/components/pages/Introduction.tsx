@@ -2,11 +2,11 @@ import { Download } from "lucide-react"
 
 export function Intro() {
     return (
-        <section className="min-h-screen min-w-screen flex items-center justify-center relative overflow-hidden">
+        <section className="min-h-screen min-w-screen flex items-center justify-center relative overflow-hidden pb-3">
             <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-transparent to-purple-500/10"></div>
             <div className="container mx-auto px-6 text-center relative z-10">
                 <div className="mb-8 animate-fade-in">
-                    <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-cyan-400 to-purple-500 p-1">
+                    <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-cyan-400 to-purple-500 p-1 mt-3">
                         <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
                             <span className="text-4xl">👨‍💻</span>
                         </div>
