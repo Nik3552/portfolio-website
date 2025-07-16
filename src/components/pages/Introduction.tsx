@@ -2,7 +2,7 @@ import { Download } from "lucide-react"
 
 export function Intro() {
     return (
-        <section className="min-h-screen min-w-screen flex items-center justify-center relative overflow-hidden">
+        <section className="min-h-screen min-w-screen flex items-center justify-center relative overflow-hidden py-3">
             <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-transparent to-purple-500/10"></div>
             <div className="container mx-auto px-6 text-center relative z-10">
                 <div className="mb-8 animate-fade-in">

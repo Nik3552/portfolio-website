@@ -2,7 +2,7 @@ import { Github, Linkedin, Mail, Code, Palette, Zap } from "lucide-react"
 
 export function AboutMe() {
     return (
-        <section className="py-20 bg-gray-50 w-screen">
+        <section className="pb-20 pt-10 bg-gray-50 w-screen">
             <div className="container mx-auto px-6">
                 <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
                     About Me
